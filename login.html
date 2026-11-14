@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In | SweetBalance</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="decor decor-one"></div>
+    <div class="decor decor-two"></div>
+
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sweet<span>Balance</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="signup.html" class="nav-btn">Sign Up</a>
+      </div>
+    </nav>
+
+    <main class="auth-container">
+      <section class="auth-card login-card">
+        <div class="auth-header">
+          <p class="eyebrow">WELCOME BACK</p>
+          <h1>Log in to <span>SweetBalance</span></h1>
+          <p>Enter your details to continue.</p>
+        </div>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row">
+              <label for="password">Password</label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+
+          <label class="check-row">
+            <input type="checkbox" id="remember">
+            <span>Remember me</span>
+          </label>
+
+          <button type="submit" class="btn-primary">Log In</button>
+
+          <p class="switch-text">
+            Don't have an account?
+            <a href="signup.html">Create one</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      window.location.href = "https://admin-dashboard-23776.web.app/Home.html?";
+    });
+  </script>
+</body>
+</html>
